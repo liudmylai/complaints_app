@@ -1,3 +1,77 @@
-.complain p {
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h2 {
+    text-align: center;
+    text-transform: uppercase;
+}
+.complaint button{
+    background-color: maroon;
+}
+
+.complaint p {
     display: none;
+} 
+
+.complaint-active p {
+    display: block;
+}
+
+.complaint-active button {
+    background-color: orange;
+}
+
+button {
+    border: 1px solid grey;
+    background-color: blue;
+    color: white;
+    margin: auto 3px ;
+    padding: 5px;
+    border-radius: 0.25rem;
+}
+
+button:hover {
+    background-color: orange;
+}
+
+input {
+    padding: 3px;
+}
+
+.input-group,
+.complaint,
+.complaint-active {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    width: 70%;
+    margin: 0 auto;;
+}
+
+.input-group input,
+.complaint span,
+.complaint-active span {
+    position: relative;
+    flex: 1 1 auto;
+    width: 1%;
+    margin-right: 3px;
+}
+
+.complaint span,
+.complaint-active span {
+    font-weight: bold;
+}
+
+.complaint,
+.complaint-active {
+    position: relative;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 0.25rem;
+    padding: 5px;
+    margin: 5px auto;
+}
+.icon {
+    color: maroon;
 }
