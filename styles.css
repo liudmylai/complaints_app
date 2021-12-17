@@ -16,6 +16,7 @@ h2 {
 
 .complaint-active p {
     display: block;
+    width: 100%;
 }
 
 .complaint-active button {
