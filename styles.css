@@ -6,8 +6,46 @@ h2 {
     text-align: center;
     text-transform: uppercase;
 }
-.complaint button{
-    background-color: maroon;
+
+button {
+    border: 1px solid grey;
+    background-color: blue;
+    color: white;
+    margin-left: 0.35rem;
+    padding: 0.35rem;
+    border-radius: 0.25rem;
+}
+
+.container {
+    width: 70%;
+    margin: 0 auto;
+}
+
+#input-group,
+.complaint,
+.complaint-active {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+
+.complaint,
+.complaint-active {
+    position: relative;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 0.25rem;
+    padding: 0.35rem 0.65rem;
+    margin: 0.35rem auto;
+}
+
+#input-group input,
+.complaint span,
+.complaint-active span {
+    position: relative;
+    flex: 1 1 auto;
+    width: 1%;
+    margin-right: 0.35rem;
 }
 
 .complaint p {
@@ -19,45 +57,13 @@ h2 {
     width: 100%;
 }
 
-.complaint-active button {
+.complaint button {
+    background-color: maroon;
+}
+
+.complaint-active button,
+.complaint button:hover {
     background-color: orange;
-}
-
-button {
-    border: 1px solid grey;
-    background-color: blue;
-    color: white;
-    margin: auto 3px ;
-    padding: 5px;
-    border-radius: 0.25rem;
-}
-
-button:hover {
-    background-color: orange;
-}
-
-input {
-    padding: 3px;
-}
-
-.input-group,
-.complaint,
-.complaint-active {
-    position: relative;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: stretch;
-    width: 70%;
-    margin: 0 auto;;
-}
-
-.input-group input,
-.complaint span,
-.complaint-active span {
-    position: relative;
-    flex: 1 1 auto;
-    width: 1%;
-    margin-right: 3px;
 }
 
 .complaint span,
@@ -65,14 +71,20 @@ input {
     font-weight: bold;
 }
 
-.complaint,
-.complaint-active {
-    position: relative;
-    border: 1px solid rgba(0,0,0,.125);
-    border-radius: 0.25rem;
-    padding: 5px;
-    margin: 5px auto;
-}
 .icon {
     color: maroon;
+}
+
+#occurrence span {
+    display: inline-block;
+    padding: 0.35rem 0.65rem;
+    margin: 0.1rem;
+    font-size: .75rem;
+    font-weight: bold;
+    text-align: left;
+    background-color: beige;
+    border-radius: 0.25rem;
+}
+#occurrence span:hover {
+    background-color: bisque;
 }
