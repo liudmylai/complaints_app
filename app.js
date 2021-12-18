@@ -7,7 +7,7 @@ const occurrence = document.getElementById('occurrence');
 // create fragment of the result
 const generateComplaint = (descriptor, resolution, index) =>
     `<div id="complaint${index}" class="complaint">
-        <span><i class="icon fas fa-history"></i> ${descriptor}</span>
+        <span><strong class="icon">&#9888;</strong> ${descriptor}</span>
         <button type="button" onclick="toggleDescription('complaint${index}')">WHAT DID THE POLICE DO?</button>
         <p>${resolution}</p>
     </div>`;

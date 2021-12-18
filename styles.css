@@ -39,7 +39,7 @@ button {
     margin: 0.35rem auto;
 }
 
-#input-group input,
+.input,
 .complaint span,
 .complaint-active span {
     position: relative;
